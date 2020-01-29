@@ -18,8 +18,9 @@ class Student
   def self.find_by_name(name)
     # find the student in the database given a name
     sql = <<-SQL 
-      SELECT * FROM 
-      students
+      SELECT * 
+      FROM songs 
+      WHERE name = ? 
     # return a new instance of the Student class
   end
   
