@@ -21,6 +21,8 @@ class Student
       SELECT * 
       FROM songs 
       WHERE name = ? 
+      LIMIT 1 
+    SQL
     # return a new instance of the Student class
   end
   
