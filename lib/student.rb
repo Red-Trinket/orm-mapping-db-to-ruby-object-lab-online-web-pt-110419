@@ -24,7 +24,8 @@ class Student
       LIMIT 1 
     SQL
     
-    DB[:conn].execute(sql, name).map do |
+    DB[:conn].execute(sql, name).map do |row|
+      
     # return a new instance of the Student class
   end
   
